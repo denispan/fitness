@@ -1,0 +1,79 @@
+.gym-video {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.gym-video__iframe {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.gym-video__poster-wrapper {
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(20, 54, 122, 0.5);
+  }
+}
+
+.gym-video__poster-image {
+   position: absolute;
+   max-width: none;
+   width: 395px;
+   height: 264px;
+   bottom: -8px;
+   left: -4px;
+
+   @include vp-1199 {
+     width: 289px;
+     height: 193px;
+     bottom: -6px;
+     left: -3px;
+   }
+
+   @include vp-767 {
+     width: 320px;
+     height: 214px;
+     bottom: -44px;
+     left: 0;
+   }
+}
+
+.gym-video__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+
+  @include vp-1199 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    & img {
+      width: 73px;
+      height: 73px;
+    }
+  }
+}

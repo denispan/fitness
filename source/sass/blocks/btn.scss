@@ -27,7 +27,13 @@
       width: 100%;
       padding: 20px 30px;
     }
+  }
 
+  &--clear-sapphire {
+    font-weight: 700;
+    color: $color-sapphire;
+    padding: 26px 46px;
+    box-shadow: 0 0 0 2px $color-sapphire inset;
   }
 
   &:disabled {
