@@ -35,26 +35,26 @@
 }
 
 .gym-video__poster-image {
-   position: absolute;
-   max-width: none;
-   width: 395px;
-   height: 264px;
-   bottom: -8px;
-   left: -4px;
+  position: absolute;
+  max-width: none;
+  width: 395px;
+  height: 264px;
+  bottom: -8px;
+  left: -4px;
 
-   @include vp-1199 {
-     width: 289px;
-     height: 193px;
-     bottom: -6px;
-     left: -3px;
-   }
+  @include vp-1199 {
+    width: 289px;
+    height: 193px;
+    bottom: -6px;
+    left: -3px;
+  }
 
-   @include vp-767 {
-     width: 320px;
-     height: 214px;
-     bottom: -44px;
-     left: 0;
-   }
+  @include vp-767 {
+    width: 320px;
+    height: 214px;
+    bottom: -44px;
+    left: 0;
+  }
 }
 
 .gym-video__btn {

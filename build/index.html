@@ -20,8 +20,7 @@
   <div class="container header__container">
     <div class="header__contacts-wrapper">
       <a class="header__logo">
-        <svg class="header__logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg"
-             aria-label="Логотип Supergym">
+        <svg class="header__logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Supergym">
           <use xlink:href="img/sprite_auto.svg#logo"></use>
         </svg>
       </a>
@@ -84,7 +83,7 @@
         <img class="gym__image" src="./img/gym.jpg" width="660" height="401" alt="Фото зала с тренажерами">
       </div>
       <div class="gym__video-wrapper gym-video">
-        <iframe class="gym-video__iframe" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="gym-video__iframe" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="gym-video__poster-wrapper">
           <img class="gym-video__poster-image" width="364" height="228" src="./img/video-poster.jpg" alt="Видеоконтент">
           <button type="button" class="gym-video__btn">
@@ -101,65 +100,62 @@
       </h2>
       <ul class="gym-membership__tab-titles-list tab-titles-list list-reset">
         <li>
-          <button type="button" data-is-active>
+          <h3 data-is-active>
             1 месяц
-          </button>
+          </h3>
         </li>
         <li>
-          <button type="button">
+          <h3>
             6 месяцев
-          </button>
+          </h3>
         </li>
         <li>
-          <button type="button">
+          <h3>
             12 месяцев
-          </button>
+          </h3>
         </li>
       </ul>
       <ul class="gym-membership__tab-content-list gym-membership__tab-content-list--1-month list-reset">
         <li class="tab-content-card">
-          <h3>
+          <h4>
             С тренером
-          </h3>
+          </h4>
           <p>
             12 занятий
           </p>
           <p>
             <span data-price="5000">5000</span>
-            <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg"
-                 aria-label="рублей">
+            <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
               <use xlink:href="img/sprite_auto.svg#ruble"></use>
             </svg>
           </p>
           <a class="btn btn--clear-sapphire" href="#">Купить абонемент</a>
         </li>
         <li class="tab-content-card">
-          <h3>
+          <h4>
             Дневной
-          </h3>
+          </h4>
           <p>
             с 8:00 до 17:00
           </p>
           <p>
             <span data-price="1700">1700</span>
-            <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg"
-                 aria-label="рублей">
+            <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
               <use xlink:href="img/sprite_auto.svg#ruble"></use>
             </svg>
           </p>
           <a class="btn btn--clear-sapphire" href="#">Купить абонемент</a>
         </li>
         <li class="tab-content-card">
-          <h3>
+          <h4>
             Полный день
-          </h3>
+          </h4>
           <p>
             с 8:00 до 22:00
           </p>
           <p>
             <span data-price="2700">2700</span>
-            <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg"
-                 aria-label="рублей">
+            <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
               <use xlink:href="img/sprite_auto.svg#ruble"></use>
             </svg>
           </p>
@@ -170,10 +166,34 @@
   </section>
   <section class="events">
     <div class="container events__container">
-      <h2 class="section-title">
-        Super Games
-      </h2>
+      <div class="events__description">
+        <h2>
+          Super<br>Games
+        </h2>
+        <dl class="events__info-list list-reset">
+          <dt>
+            Дата
+          </dt>
+          <dd>
+            7 <small>марта<br> 2019</small>
+          </dd>
+          <dt>
+            Время
+          </dt>
+          <dd>
+            12:00
+          </dd>
+        </dl>
+        <p>Ежегодные соревнования по CrossFit</p>
+        <a class="btn btn--clear-white-first" href="#">заполнить заявку</a>
+      </div>
+      <div class="events__image-container">
+        <img src="./img/super-games.jpg" width="780" height="500" alt="Обложка для соревнований">
+      </div>
+
     </div>
+  </section>
+  <section class="trainers">
   </section>
 </main>
 <footer>
