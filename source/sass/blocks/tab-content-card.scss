@@ -17,79 +17,81 @@
     box-shadow: none;
   }
 
-  & p:first-of-type {
-    margin: 0 0 65px;
-    color: $color-chambray;
+  @include vp-767 {
+    min-height: 384px;
+    padding: 44px 20px 20px;
   }
+}
 
-  & p:last-of-type {
+.tab-content-card__time {
+  margin: 0 0 65px;
+  color: $color-chambray;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
+}
+
+.tab-content-card__price {
     margin: 0 0 30px;
     font-size: 60px;
     line-height: 90px;
     font-weight: 700;
     color: $color-egyptian-blue;
 
-    & span {
-      position: relative;
-      z-index: 1;
-    }
-
-    & svg {
-      position: relative;
-      z-index: 1;
-    }
-
-    & span::before {
-      content: attr(data-price);
-      position: absolute;
-      bottom: -15px;
-      left: -19px;
-      font-size: 100px;
-      line-height: 150px;
-      font-weight: 700;
-      color: $color-whisper;
-      z-index: -1;
-    }
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+    margin: 0 0 26px 4px;
   }
+}
 
-  & h4 {
-    font-size: 26px;
-    line-height: 28px;
-    margin: 0 0 11px;
-    color: $color-sapphire;
+.tab-content-card__price span {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    bottom: -15px;
+    left: -19px;
+    font-size: 100px;
+    line-height: 150px;
+    font-weight: 700;
+    color: $color-whisper;
+    z-index: -1;
   }
 
   @include vp-767 {
-    min-height: 384px;
-    padding: 44px 20px 20px;
-
-    & h4 {
-      font-size: 22px;
-      line-height: 24px;
+    &::before {
+      font-size: 80px;
+      line-height: 120px;
+      bottom: -11px;
+      left: -18px;
     }
+  }
+}
 
-    & p:first-of-type {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 52px;
-    }
+.tab-content-card__price svg {
+  position: relative;
+  z-index: 1;
 
-    & p:last-of-type {
-      font-size: 48px;
-      line-height: 72px;
-      margin: 0 0 26px 4px;
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
+}
 
-      & span::before {
-        font-size: 80px;
-        line-height: 120px;
-        bottom: -11px;
-        left: -18px;
-      }
+.tab-content-card h4 {
+  font-size: 26px;
+  line-height: 28px;
+  margin: 0 0 11px;
+  color: $color-sapphire;
 
-      & svg {
-        width: 24px;
-        height: 33px;
-      }
-    }
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
   }
 }

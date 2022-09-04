@@ -139,18 +139,10 @@
   justify-self: end;
   text-align: end;
 
-  & span {
-    margin-left: 150px;
-  }
-
   @include vp-1199 {
     font-size: 86px;
     line-height: 86px;
     margin-right: 0;
-
-    & span {
-      margin-left: 100px;
-    }
   }
 
   @include vp-767 {
@@ -158,6 +150,15 @@
     line-height: 78px;
   }
 }
+
+.header__title span {
+  margin-left: 150px;
+
+  @include vp-1199 {
+    margin-left: 100px;
+  }
+}
+
 
 .header__tag-list {
   grid-column: 1 / 2;

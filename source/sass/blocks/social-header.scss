@@ -1,14 +1,14 @@
 .social-header {
   text-align: end;
+}
 
-  & li:not(:last-child) {
-    margin-bottom: 9px;
-  }
+.social-header li:not(:last-child) {
+  margin-bottom: 9px;
+}
 
-  & a {
-    font-size: 12px;
-    line-height: 14px;
-    text-transform: uppercase;
-    color: $color-default-white;
-  }
+.social-header a {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $color-default-white;
 }

@@ -42,6 +42,16 @@
     pointer-events: none;
   }
 
+  &--underline {
+    display: inline-block;
+    border: none;
+    color: $color-resolution-blue;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-resolution-blue;
+    margin: 0;
+    padding: 0;
+  }
+
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus {
