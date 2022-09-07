@@ -73,9 +73,13 @@
 }
 
 .gym-membership__tab-content-list {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+
+  &--active {
+    display: grid;
+  }
 
   @include vp-1199 {
     display: flex;

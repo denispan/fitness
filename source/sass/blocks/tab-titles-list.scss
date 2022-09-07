@@ -34,22 +34,22 @@
   }
 }
 
-.tab-titles-list h3 {
+.tab-titles-list__btn {
   position: relative;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   color: $color-sapphire;
   margin: 0;
+  border: none;
   padding: 13px 0;
   background-color: $color-transparent;
-  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
   }
 
-  &[data-is-active]::before {
+  &--active::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -70,4 +70,8 @@
     line-height: 24px;
     padding: 14px 5px 14px 1px;
   }
+}
+
+.tab-titles-list li:last-child button {
+  padding-right: 3px;
 }

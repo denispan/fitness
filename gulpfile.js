@@ -33,9 +33,9 @@ const css = () => {
 };
 
 const js = () => {
-  return gulp.src(['source/js/*'])
-      // .pipe(webpackStream(webpackConfig))
-      .pipe(gulp.dest('build/js'))
+  return gulp.src(['source/js/main.js'])
+    .pipe(webpackStream(webpackConfig))
+    .pipe(gulp.dest('build/js'))
 };
 
 const svgo = () => {

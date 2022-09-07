@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 139px 15px 69px;
+    padding: 69px 15px 69px;
   }
 }
 
@@ -34,7 +34,7 @@
   margin: 0;
 
   @include vp-1199 {
-   column-gap: 60px;
+    column-gap: 60px;
   }
 
   @include vp-767 {
@@ -44,7 +44,7 @@
 }
 
 .request__form input {
-  padding: 0px 10px 5px 0px;
+  padding: 0 10px 5px 0;
   border: none;
   border-bottom: 1px solid $color-light-slate-grey;
   background-color: $color-transparent;

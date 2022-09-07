@@ -47,18 +47,6 @@
   margin-right: 40px;
 }
 
-.header__logo-icon {
-  @include vp-1199 {
-    width: 80px;
-    height: 19px;
-  }
-
-  @include vp-767 {
-    width: 67px;
-    height: 17px;
-  }
-}
-
 .header__phone {
   font-family: $ff-custom;
   font-size: 26px;

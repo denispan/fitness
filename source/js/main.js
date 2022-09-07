@@ -1,31 +1,20 @@
-// import './vendor.js';
+import {addScrollSmooth} from './utils/scroll-smooth';
+import {initVideo} from './modules/video';
+import {initTabs} from './utils/tabs-switcher';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  // const swiper_trainers = new Swiper('.swiper', {
-  //   // Optional parameters
-  //   direction: 'vertical',
-  //   loop: true,
-  //
-  //   // If we need pagination
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //   },
-  //
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-  //
-  //   // And if we need scrollbar
-  //   scrollbar: {
-  //     el: '.swiper-scrollbar',
-  //   },
-  // });
+  // Utils
+  // -------------------------------
+  addScrollSmooth();
+  initVideo();
+  initTabs();
 
+
+  // Modules
+  // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
