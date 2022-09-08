@@ -1847,20 +1847,18 @@ button,
 
 .gym-video__poster-wrapper button {
   position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   left: 50%;
   top: 50%;
+  background: url("../img/svg/video-btn.svg") no-repeat;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: transparent;
   border: none;
   z-index: 1;
   cursor: pointer;
-}
-
-.gym-video__poster-wrapper button img {
-  width: 100px;
-  height: 100px;
 }
 
 .gym-video__poster-wrapper button:hover {
@@ -1973,7 +1971,7 @@ button,
   background-color: #d10a42;
 }
 
-.tab-titles-list li:last-child button {
+.tab-titles-list button:last-of-type {
   padding-right: 3px;
 }
 
@@ -2275,7 +2273,7 @@ button,
   position: relative;
 }
 
-.trainer-card div img {
+.trainer-card img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2438,7 +2436,7 @@ button,
   margin: 0 0 0 27px;
 }
 
-.advantages-list__item p small {
+.advantages-list__item small {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -2462,7 +2460,7 @@ button,
   margin: 5px 0 0 30px;
 }
 
-.advantages-list__item dl dt {
+.advantages-list__item dt {
   font-size: 22px;
   line-height: 33px;
   font-weight: 700;
@@ -2470,7 +2468,7 @@ button,
   margin: 0 0 5px 0;
 }
 
-.advantages-list__item dl dd {
+.advantages-list__item dd {
   font-size: 16px;
   line-height: 22.4px;
   font-weight: 300;
@@ -2511,7 +2509,7 @@ button,
   margin: 0 auto 25px;
 }
 
-.advantages-list__item--special > p small {
+.advantages-list__item--special small {
   font-size: 26px;
   line-height: 39px;
   font-weight: 700;
@@ -2525,7 +2523,7 @@ button,
   padding-bottom: 3px;
 }
 
-.advantages-list__item--special dl dd {
+.advantages-list__item--special dd {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -3164,19 +3162,14 @@ button,
   }
 
   .gym-video__poster-wrapper button {
+    width: 73px;
+    height: 73px;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
-
-  .gym-video__poster-wrapper button img {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    width: 73px;
-    height: 73px;
+    background-size: 73px 73px;
   }
 
   .gym-membership {
@@ -3372,7 +3365,7 @@ button,
     margin: 0;
   }
 
-  .advantages-list__item p small {
+  .advantages-list__item small {
     line-height: 14px;
   }
 
@@ -3385,7 +3378,7 @@ button,
     margin-top: 1px;
   }
 
-  .advantages-list__item dl dt {
+  .advantages-list__item dt {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2px;
@@ -3411,7 +3404,7 @@ button,
     margin-bottom: 9px;
   }
 
-  .advantages-list__item--special > p small {
+  .advantages-list__item--special small {
     font-size: 22px;
     line-height: 31px;
     padding-left: 5px;
@@ -3693,13 +3686,6 @@ button,
     left: 0;
   }
 
-  .gym-video__poster-wrapper button img {
-    width: 73px;
-    height: 73px;
-    bottom: auto;
-    left: auto;
-  }
-
   .gym-membership::before {
     content: none;
   }
@@ -3732,6 +3718,10 @@ button,
     font-size: 16px;
     line-height: 24px;
     padding: 14px 5px 14px 1px;
+  }
+
+  .tab-titles-list button:last-of-type {
+    padding-right: 4px;
   }
 
   .tab-content-card {
@@ -3948,7 +3938,7 @@ button,
     margin-bottom: 7px;
   }
 
-  .advantages-list__item--special > p small {
+  .advantages-list__item--special small {
     padding-top: 0;
     font-size: 22px;
     line-height: 24px;
@@ -3990,7 +3980,7 @@ button,
     text-align: center;
   }
 
-  .promotions__card p span {
+  .promotions__card span {
     display: none;
   }
 
@@ -4243,13 +4233,6 @@ button,
     height: 110%;
     bottom: 0;
   }
-
-  .gym-video__poster-wrapper button img {
-    width: 73px;
-    height: 73px;
-    bottom: auto;
-    left: auto;
-  }
 }
 
 @media (max-width: 374px) {
@@ -4262,12 +4245,5 @@ button,
     width: 320px;
     height: 214px;
     bottom: -44px;
-  }
-
-  .gym-video__poster-wrapper button img {
-    width: 73px;
-    height: 73px;
-    bottom: auto;
-    left: auto;
   }
 }

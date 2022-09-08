@@ -88,10 +88,12 @@
 
   @include vp-767 {
     text-align: center;
+  }
+}
 
-    & span {
-      display: none;
-    }
+.promotions__card span {
+  @include vp-767 {
+    display: none;
   }
 }
 

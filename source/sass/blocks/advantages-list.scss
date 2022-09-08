@@ -55,14 +55,13 @@
     flex-direction: column;
     align-items: start;
     margin: 0 0 0 27px;
+  }
 
-
-    & small {
-      font-size: 14px;
-      line-height: 16px;
-      font-weight: 400;
-      color: $color-persian-blue;
-    }
+  & small {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $color-persian-blue;
   }
 
   &:nth-child(2n) p {
@@ -93,10 +92,10 @@
       font-size: 58px;
       line-height: 60px;
       margin: 0;
+    }
 
-      & small {
-        line-height: 14px;
-      }
+    & small {
+      line-height: 14px;
     }
 
     &:nth-child(2n) p,
@@ -145,30 +144,8 @@
 .advantages-list__item dl {
   margin: 5px 0 0 30px;
 
-  & dt {
-    font-size: 22px;
-    line-height: 33px;
-    font-weight: 700;
-    color: $color-sapphire;
-    margin: 0 0 5px 0;
-  }
-
-  & dd {
-    font-size: 16px;
-    line-height: 22.4px;
-    font-weight: 300;
-    color: $color-sapphire;
-    margin: 0;
-  }
-
   @include vp-1199 {
     margin-top: 1px;
-
-    & dt {
-      font-size: 20px;
-      line-height: 30px;
-      margin-bottom: 2px;
-    }
   }
 
   @include vp-767 {
@@ -176,6 +153,28 @@
     margin: 0;
     padding: 0 20px;
   }
+}
+
+.advantages-list__item dt {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+  color: $color-sapphire;
+  margin: 0 0 5px 0;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2px;
+  }
+}
+
+.advantages-list__item dd {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 300;
+  color: $color-sapphire;
+  margin: 0;
 }
 
 .advantages-list__item--special {
@@ -197,28 +196,28 @@
     padding-right: 6px;
     padding-bottom: 3px;
     margin: 0 auto 25px;
+  }
 
-    & small {
-      font-size: 26px;
-      line-height: 39px;
-      font-weight: 700;
-      color: $color-default-white;
-      padding-left: 6px;
-      padding-top: 3px;
-    }
+  & small {
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 700;
+    color: $color-default-white;
+    padding-left: 6px;
+    padding-top: 3px;
   }
 
   & dl {
     margin: 0 20px;
     padding-bottom: 3px;
+  }
 
-    & dd {
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 400;
-      color: $color-default-white;
-      margin: 0 auto;
-    }
+  & dd {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-default-white;
+    margin: 0 auto;
   }
 
   @include vp-1199 {
@@ -232,13 +231,13 @@
       font-size: 74px;
       line-height: 74px;
       margin-bottom: 9px;
+    }
 
-      & small {
-        font-size: 22px;
-        line-height: 31px;
-        padding-left: 5px;
-        padding-top: 0;
-      }
+    & small {
+      font-size: 22px;
+      line-height: 31px;
+      padding-left: 5px;
+      padding-top: 0;
     }
   }
 
@@ -251,12 +250,12 @@
 
     & > p {
       margin-bottom: 7px;
+    }
 
-      & small {
-        padding-top: 0;
-        font-size: 22px;
-        line-height: 24px;
-      }
+    & small {
+      padding-top: 0;
+      font-size: 22px;
+      line-height: 24px;
     }
   }
 }
