@@ -20,11 +20,11 @@
   <div class="container header__container">
     <div class="header__contacts-wrapper">
       <a class="header__logo">
-        <svg class="logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Supergym">
+        <svg class="logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Supergym.">
           <use xlink:href="img/sprite_auto.svg#logo"></use>
         </svg>
       </a>
-      <a class="header__phone" href="tel:+78005555555" aria-label="Позвонить нам">
+      <a class="header__phone" href="tel:+78005555555" aria-label="Позвонить нам.">
         8-800-555-55-55
       </a>
     </div>
@@ -101,7 +101,7 @@
           </picture>
           <button type="button" class="gym-video__btn">
             <span class="visually-hidden">Начать просмотр видео.</span>
-            <img src="./img/svg/video-btn.svg" width="100" height="100" alt="Кнопка старта видео.">
+            <img src="./img/svg/video-btn.svg" width="100" height="100" alt="Кнопка запуска видео.">
           </button>
         </div>
       </div>
@@ -323,10 +323,14 @@
     </div>
   </section>
   <section class="trainers" id="trainers">
-    <div class="container trainers__container">
+<!--    <div class="container trainers__container">-->
       <h2 class="section-title trainers__title">
         Тренеры
       </h2>
+    <div class="trainers__slider-wrapper">
+      <button type="button" class="trainers__swiper-button-prev">
+        <span class="visually-hidden">Листать назад</span>
+      </button>
       <div class="swiper trainers__slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -554,10 +558,12 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
+      <button type="button" class="trainers__swiper-button-next">
+        <span class="visually-hidden">Листать вперед</span>
+      </button>
     </div>
+
   </section>
   <section class="advantages">
     <div class="container advantages__container">
@@ -677,21 +683,51 @@
       <h2 class="section-title reviews__title">
         Отзывы
       </h2>
-      <div class="review-card">
-        <div>
-          <picture>
-            <!-- 1x: 80px; 2x: 160px-->
-            <source type="image/webp" srcset="./img/anna-review.webp 1x, ./img/anna-review@2x.webp 2x">
-            <img srcset="./img/anna-review@2x.jpg 2x" src="./img/anna-review.jpg" width="80" height="80" alt="Фото Анны Орловой.">
-          </picture>
+      <div class="swiper reviews__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div>
+                <picture>
+                  <!-- 1x: 80px; 2x: 160px-->
+                  <source type="image/webp" srcset="./img/anna-review.webp 1x, ./img/anna-review@2x.webp 2x">
+                  <img srcset="./img/anna-review@2x.jpg 2x" src="./img/anna-review.jpg" width="80" height="80" alt="Фото Анны Орловой.">
+                </picture>
+              </div>
+              <h3>
+                Анна Орлова
+              </h3>
+              <p>
+                «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div>
+                <picture>
+                  <!-- 1x: 80px; 2x: 160px-->
+                  <source type="image/webp" srcset="./img/anna-review.webp 1x, ./img/anna-review@2x.webp 2x">
+                  <img srcset="./img/anna-review@2x.jpg 2x" src="./img/anna-review.jpg" width="80" height="80" alt="Фото Анны Орловой.">
+                </picture>
+              </div>
+              <h3>
+                Анна Орлова
+              </h3>
+              <p>
+                «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+              </p>
+            </div>
+          </div>
         </div>
-        <h3>
-          Анна Орлова
-        </h3>
-        <p>
-          «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-          дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-        </p>
+        <button type="button" class="swiper-button-prev">
+          <span class="visually-hidden">Перейти к предыдущему отзыву.</span>
+        </button>
+        <button type="button" class="swiper-button-next">
+          <span class="visually-hidden">Перейти к следующему отзыву.</span>
+        </button>
       </div>
     </div>
   </section>
@@ -702,10 +738,9 @@
       </h2>
       <form class="form request__form" action="https://echo.htmlacademy.ru/" method="get">
         <label class="visually-hidden" for="name">Введите Ваше имя</label>
-        <input type="text" id="name" name="name" placeholder="Имя">
+        <input type="text" id="name" name="name" placeholder="Имя" required>
         <label class="visually-hidden" for="phone">Введите телефон для связи</label>
-        <input type="tel" id="phone" maxlength="14" name="phone" pattern=".{14}"
-               title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" required>
+        <input type="tel" id="phone" maxlength="14" name="phone" pattern=".{14}" title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" required>
         <button class="btn btn--clear-white-first" type="submit">
           Отправить
         </button>
@@ -754,7 +789,7 @@
 <footer class="footer">
   <div class="container footer__container">
     <a class="footer__logo">
-      <svg class="logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Supergym">
+      <svg class="logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Supergym.">
         <use xlink:href="img/sprite_auto.svg#logo"></use>
       </svg>
     </a>
@@ -798,21 +833,21 @@
     <ul class="footer__social-list list-reset">
       <li>
         <a href="#">
-          <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" aria-label="Вконтакте">
+          <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" aria-label="Вконтакте.">
             <use xlink:href="img/sprite_auto.svg#social-vk"></use>
           </svg>
         </a>
       </li>
       <li>
         <a href="#">
-          <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" aria-label="Одноклассники">
+          <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" aria-label="Одноклассники.">
             <use xlink:href="img/sprite_auto.svg#social-ok"></use>
           </svg>
         </a>
       </li>
       <li>
         <a href="#">
-          <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" aria-label="Реддит">
+          <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" aria-label="Реддит.">
             <use xlink:href="img/sprite_auto.svg#social-reddit"></use>
           </svg>
         </a>

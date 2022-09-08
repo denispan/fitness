@@ -14,6 +14,7 @@
   background-color: $color-transparent;
   border: 4px solid $color-default-white;
   cursor: pointer;
+  user-select: none;
 
   &--clear-white-first {
     padding: 19px 55px;

@@ -18,7 +18,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: $color-dark-gray;
 }
 .swiper {
   margin-left: auto;
@@ -174,7 +174,7 @@
   height: var(--swiper-virtual-size);
 }
 :root {
-  --swiper-navigation-size: 44px;
+  --swiper-navigation-size: 34px;
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
   */

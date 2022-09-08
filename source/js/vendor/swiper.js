@@ -1,4 +1,4 @@
-const swiper = () => {
+
 
   /**
  * Swiper 7.4.1
@@ -10082,6 +10082,3 @@ const swiper = () => {
 
 })));
 //# sourceMappingURL=swiper-bundle.js.map
-};
-
-export default swiper();

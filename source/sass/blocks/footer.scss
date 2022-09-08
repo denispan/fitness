@@ -64,6 +64,10 @@
 }
 
 .footer__social-list li {
+  &:hover {
+    opacity: 0.8;
+  }
+
   &:not(:last-child) {
     margin-right: 11px;
   }

@@ -44,6 +44,8 @@
   border: none;
   padding: 13px 0;
   background-color: $color-transparent;
+  cursor: pointer;
+  user-select: none;
 
   &:hover {
     opacity: 0.8;

@@ -82,7 +82,12 @@
   }
 
   @include vp-1199 {
-    display: flex;
+    display: none;
+
+    &--active {
+      display: flex;
+    }
+
     flex-direction: column;
     gap: 0;
 

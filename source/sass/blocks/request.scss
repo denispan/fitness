@@ -4,9 +4,13 @@
 
 .request__container {
   padding: 68px 170px 69px 103px;
+  max-width: 683px;
+  margin: 0 0 0 auto;
 
   @include vp-1199 {
     padding: 69px 163px 69px 133px;
+    max-width: none;
+    margin: 0 auto;
   }
 
   @include vp-767 {
