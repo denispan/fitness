@@ -115,7 +115,9 @@
 .trainer-card__description ul {
   display: none;
   text-align: start;
-  margin-left: 20px;
+  margin: 0 0 0 20px;
+  padding: 0;
+  list-style: none;
   overflow-y: auto;
 
   @include vp-767 {

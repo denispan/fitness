@@ -24,18 +24,6 @@
   }
 }
 
-.gym__title {
-  margin-bottom: 8px;
-
-  @include vp-1199 {
-    margin-bottom: 9px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 6px;
-  }
-}
-
 .gym__description-wrapper {
   margin: 47px 55px auto 60px;
 
@@ -50,6 +38,18 @@
   }
 }
 
+.gym__description-wrapper h2 {
+  margin-bottom: 8px;
+
+  @include vp-1199 {
+    margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 6px;
+  }
+}
+
 .gym__description-wrapper p {
   font-size: 16px;
   line-height: 24px;
@@ -61,7 +61,7 @@
     margin-bottom: 8px;
   }
 
-  &.gym__subtitle {
+  &:first-of-type {
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
@@ -72,11 +72,11 @@
   @include vp-1199 {
     margin: auto 80px auto;
 
-    &.gym__subtitle {
+    &:first-of-type {
       margin-bottom: 34px;
     }
 
-    &:last-child {
+    &:last-of-type {
       display: none;
     }
   }
@@ -84,7 +84,7 @@
   @include vp-767 {
     margin: 0 27px 0 0;
 
-    &.gym__subtitle {
+    &:first-of-type {
       margin-bottom: 24px;
       margin-right: 10px;
     }
@@ -118,7 +118,7 @@
   }
 }
 
-.gym__image {
+.gym__image-container img {
   position: absolute;
   max-width: none;
   width: 660px;

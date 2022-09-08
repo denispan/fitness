@@ -27,27 +27,6 @@
     padding: 20px 10px;
   }
 
-  &:nth-child(n) p {
-    margin-left: 27px;
-  }
-
-  &:nth-child(2n) p {
-    margin-left: 3px;
-  }
-
-  &:nth-child(3n) p {
-    margin: 0 auto 25px;
-  }
-
-  &:nth-child(4n) p {
-    margin-left: 20px;
-  }
-
-  &:nth-child(5n) p {
-    margin-left: 3px;
-    margin-right: 2px;
-  }
-
   &:nth-child(4n)::before,
   &:nth-child(5n)::before {
     content: "";
@@ -64,6 +43,41 @@
     left: 3px;
   }
 
+  & p {
+    width: fit-content;
+    font-size: 71px;
+    line-height: 71px;
+    font-weight: 700;
+    background: $crimson-to-cobalt-light;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 0 0 27px;
+
+
+    & small {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: $color-persian-blue;
+    }
+  }
+
+  &:nth-child(2n) p {
+    margin-left: 3px;
+  }
+
+  &:nth-child(4n) p {
+    margin-left: 20px;
+  }
+
+  &:nth-child(5n) p {
+    margin-left: 3px;
+    margin-right: 2px;
+  }
+
   @include vp-1199 {
     &:nth-child(3n) {
       margin: 0 118px;
@@ -75,12 +89,19 @@
       content: none;
     }
 
-    &:nth-child(n) p {
+    & p {
+      font-size: 58px;
+      line-height: 60px;
       margin: 0;
+
+      & small {
+        line-height: 14px;
+      }
     }
 
-    &:nth-child(3n) p {
-      margin-bottom: 9px;
+    &:nth-child(2n) p,
+    &:nth-child(5n) p {
+      margin-left: 0;
     }
   }
 
@@ -90,14 +111,6 @@
 
     &:not(:last-child) {
       margin-bottom: 31px;
-    }
-
-    &:nth-child(n) p {
-      margin-bottom: 10px;
-    }
-
-    &:nth-child(3n) p {
-      margin-bottom: 6px;
     }
 
     &:nth-child(2n) {
@@ -112,41 +125,20 @@
       margin: 0 -15px 40px;
       padding: 38px 39px 10px;
     }
-  }
-}
 
-.advantages-list__item p {
-  width: fit-content;
-  font-size: 71px;
-  line-height: 71px;
-  font-weight: 700;
-  background: $crimson-to-cobalt-light;
-  background-clip: text;
-  color: transparent;
-  margin: 0;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-
-  & small {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    color: $color-persian-blue;
-  }
-
-  @include vp-1199 {
-    font-size: 58px;
-    line-height: 60px;
-
-    & small {
-      line-height: 14px;
+    & p {
+      align-items: center;
+      margin-bottom: 10px;
     }
-  }
 
-  @include vp-767 {
-    align-items: center;
+    &:nth-child(4n) p {
+      margin-bottom: 8px;
+    }
+
+    &:nth-child(5n) p {
+      margin-top: 2px;
+      margin-left: 2px;
+    }
   }
 }
 
@@ -196,7 +188,7 @@
   margin: 11px 7px 5px 9px;
   padding: 20px 10px;
 
-  & p {
+  & > p {
     align-items: center;
     font-size: 74px;
     line-height: 74px;
@@ -204,6 +196,7 @@
     color: $color-default-white;
     padding-right: 6px;
     padding-bottom: 3px;
+    margin: 0 auto 25px;
 
     & small {
       font-size: 26px;
@@ -235,9 +228,10 @@
     align-items: center;
     justify-content: start;
 
-    & p {
+    & > p {
       font-size: 74px;
       line-height: 74px;
+      margin-bottom: 9px;
 
       & small {
         font-size: 22px;
@@ -255,11 +249,13 @@
       margin-bottom: 5px;
     }
 
-    & p {
+    & > p {
+      margin-bottom: 7px;
+
       & small {
         padding-top: 0;
         font-size: 22px;
-        line-height: 26px;
+        line-height: 24px;
       }
     }
   }

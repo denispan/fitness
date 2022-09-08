@@ -87,7 +87,7 @@
   }
 }
 
-.header__city {
+.header__description-wrapper p {
   font-family: $ff-custom;
   font-size: 49px;
   line-height: 59px;
@@ -147,8 +147,7 @@
   }
 }
 
-
-.header__tag-list {
+.header__description-wrapper ul {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   justify-self: start;

@@ -8,7 +8,7 @@ const initVideo = () => {
 
     videoBlocks.forEach((video) => {
 
-      const buttonPlay = video.querySelector('.gym-video__btn');
+      const buttonPlay = video.querySelector('button');
 
       buttonPlay.addEventListener('click', () => {
         if (video.classList.contains('video-start')) {

@@ -1,6 +1,7 @@
 .tab-titles-list {
   position: relative;
   display: inline-flex;
+  vertical-align: baseline;
   flex-wrap: wrap;
 
   &::before {
