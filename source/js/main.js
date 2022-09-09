@@ -1,5 +1,6 @@
 import {addScrollSmooth} from './utils/scroll-smooth';
 import {initVideo} from './modules/video';
+import {initPhoneInput} from './modules/phone-input';
 import {initTabs} from './utils/tabs-switcher';
 
 // ---------------------------------
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   addScrollSmooth();
   initVideo();
   initTabs();
+  initPhoneInput();
 
 
   // Modules

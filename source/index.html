@@ -101,7 +101,6 @@
           </picture>
           <button type="button">
             <span class="visually-hidden">Начать просмотр видео.</span>
-            <img src="./img/svg/video-btn.svg" width="100" height="100" alt="Кнопка запуска видео.">
           </button>
         </div>
       </div>
@@ -738,7 +737,7 @@
         <label class="visually-hidden" for="name">Введите Ваше имя</label>
         <input type="text" id="name" name="name" placeholder="Имя" required>
         <label class="visually-hidden" for="phone">Введите телефон для связи</label>
-        <input type="tel" id="phone" maxlength="11" name="phone" pattern=".{11}" title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" required>
+        <input type="tel" id="phone" name="client-tel" data-tel-input maxlength="14" pattern=".{14}" title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" required>
         <button class="btn btn--clear-white-first" type="submit">
           Отправить
         </button>
