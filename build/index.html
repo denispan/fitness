@@ -18,13 +18,13 @@
 <body class="page-body">
 <header class="header">
   <div class="container header__container">
+    <a class="header__logo">
+      <svg class="logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Supergym.">
+        <use xlink:href="img/sprite_auto.svg#logo"></use>
+      </svg>
+    </a>
     <div class="header__contacts-wrapper">
-      <a class="header__logo">
-        <svg class="logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Supergym.">
-          <use xlink:href="img/sprite_auto.svg#logo"></use>
-        </svg>
-      </a>
-      <a class="header__phone" href="tel:+78005555555" aria-label="Позвонить нам.">
+      <a href="tel:+78005555555" aria-label="Позвонить нам.">
         8-800-555-55-55
       </a>
     </div>
@@ -44,15 +44,17 @@
           Кардио-зона
         </li>
       </ul>
-      <a class="btn btn--clear-white-first header__btn" href="#gym-membership" data-anchor>
-        Купить абонемент
-      </a>
     </div>
-    <picture>
-      <!-- 1x: 500px; 2x: 1000px-->
-      <source type="image/webp" srcset="./img/header-pic.webp 1x, ./img/header-pic@2x.webp 2x">
-      <img class="header__image" srcset="./img/header-pic@2x.jpg 2x" src="./img/header-pic.jpg" width="500" height="556" alt="Фото спортсмена.">
-    </picture>
+    <a class="btn btn--clear-white-first header__btn" href="#gym-membership" data-anchor>
+      Купить абонемент
+    </a>
+    <div class="header__image-wrapper">
+      <picture>
+        <!-- 1x: 500px; 2x: 1000px-->
+        <source type="image/webp" srcset="./img/header-pic.webp 1x, ./img/header-pic@2x.webp 2x">
+        <img srcset="./img/header-pic@2x.jpg 2x" src="./img/header-pic.jpg" width="500" height="556" alt="Фото спортсмена.">
+      </picture>
+    </div>
     <ul class="header__social social-header list-reset">
       <li>
         <a href="#">Fb</a>
@@ -329,7 +331,7 @@
       <button type="button" class="trainers__swiper-button-prev">
         <span class="visually-hidden">Листать назад</span>
       </button>
-      <div class="swiper trainers__slider">
+    <div class="swiper trainers__slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="trainer-card">
