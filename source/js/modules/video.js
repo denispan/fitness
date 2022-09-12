@@ -1,4 +1,3 @@
-
 const initVideo = () => {
 
   const videoBlocks = document.querySelectorAll('div[data-video]');

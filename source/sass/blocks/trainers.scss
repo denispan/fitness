@@ -2,7 +2,7 @@
   grid-column: 1 / 3;
   padding-top: 118px;
   padding-bottom: 120px;
-  max-width: 1366px;
+  max-width: 100%;
   margin: 0 auto;
 
   @include vp-1199 {
@@ -32,11 +32,16 @@
 
 .trainers__slider-wrapper {
   display: flex;
+  max-width: 1366px;
 
   @include vp-767 {
     max-width: 385px;
     margin: 0 auto;
   }
+}
+
+.trainers__slider {
+  width: 100%;
 }
 
 .trainers__swiper-button-next,

@@ -1,7 +1,6 @@
 .trainer-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: minmax(0, 1fr);
   height: 294px;
   text-align: center;
   position: relative;
@@ -64,6 +63,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  max-width: none;
 }
 
 .trainer-card__description {
