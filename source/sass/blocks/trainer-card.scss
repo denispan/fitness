@@ -42,6 +42,10 @@
     }
 
     @include vp-767 {
+      &::after {
+        height: 104%;
+      }
+
       & h3 {
         padding-right: 3px;
       }

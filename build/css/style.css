@@ -3949,6 +3949,12 @@ button,
     transform: rotate(180deg) translateY(47%);
   }
 
+  .trainer-card:hover::after,
+  .trainer-card:focus::after,
+  .trainer-card:active::after {
+    height: 104%;
+  }
+
   .trainer-card:hover h3,
   .trainer-card:focus h3,
   .trainer-card:active h3 {
