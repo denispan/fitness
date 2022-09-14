@@ -9,6 +9,7 @@
 }
 
 .gym-video iframe {
+  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
@@ -47,22 +48,16 @@
   }
 
   @include vp-767 {
-    width: 410px;
-    height: 278px;
-    bottom: -7px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
     left: 0;
   }
 
-  @include vp-457 {
-    width: 105%;
-    height: 110%;
-    bottom: 0;
-  }
-
   @include vp-374 {
-    width: 320px;
     height: 214px;
-    bottom: -44px;
+    bottom: 3px;
   }
 }
 

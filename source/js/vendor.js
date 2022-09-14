@@ -12,25 +12,16 @@ const sliderTrainers = new Swiper('.trainers__slider', {
       slidesPerView: 4,
       spaceBetween: 40,
     },
-    // when window width is >= 768px
-    980: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    // when window width is >= 768px
-    850: {
-      slidesPerView: 2,
-      spaceBetween: 90,
-    },
+
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
     },
-    // when window width is >= 768px
+
+    // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 0,
     },
   },
 
@@ -50,8 +41,8 @@ const sliderReviews = new Swiper('.reviews__slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.reviews__slider .swiper-button-next',
-    prevEl: '.reviews__slider .swiper-button-prev',
+    nextEl: '.reviews__slider-btn--next',
+    prevEl: '.reviews__slider-btn--prev',
   },
 });
 

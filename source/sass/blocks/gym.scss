@@ -93,6 +93,7 @@
 
 .gym__image-container {
   position: relative;
+  align-self: start;
   overflow: hidden;
   max-width: 660px;
   min-height: 401px;
@@ -107,14 +108,12 @@
   }
 
   @include vp-767 {
-    width: 80%;
-    height: 313px;
+    max-width: 100%;
+    min-height: 313px;
+    width: 100%;
+    height: 100%;
     margin-top: 24px;
     margin-bottom: 40px;
-  }
-
-  @include vp-457 {
-    width: 100%;
   }
 }
 
@@ -134,17 +133,23 @@
   }
 
   @include vp-767 {
-    max-width: 875px;
-    width: 147%;
-    max-height: 430px;
-    bottom: 0;
-    left: -50%;
-    transform: translateX(5%);
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    bottom: auto;
+    left: auto;
   }
 
   @include vp-457 {
-    max-width: 660px;
-    max-height: 313px;
+    position: absolute;
+    max-width: 774px;
+    height: 313px;
+    width: 465px;
+    left: auto;
+    bottom: 0;
+    right: -14px;
   }
 }
 
@@ -152,9 +157,10 @@
   position: absolute;
   left: 50%;
   transform: translateX(-39.3%);
-  bottom: 15.9%;
+  top: 408px;
 
   @include vp-1199 {
+    top: auto;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
@@ -162,16 +168,14 @@
 
   @include vp-767 {
     position: relative;
-    width: 50%;
-    bottom: 0;
-  }
-
-  @include vp-457 {
-    width: 70%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    bottom: auto;
   }
 
   @include vp-374 {
     width: 100%;
-    max-width: 320px;
+    height: 167px;
   }
 }
